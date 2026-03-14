@@ -45,7 +45,8 @@ p {
 }
 
 body {
-    font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 footer {
