@@ -45,11 +45,14 @@ p {
 }
 
 body {
-    font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 footer {
-    margin: 20px 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-top: 1px solid #000;
     text-align: center;
 }
