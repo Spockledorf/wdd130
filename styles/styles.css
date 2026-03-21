@@ -1,5 +1,18 @@
+:root {
+    --primary_color: darkblue;
+    --font-size-large: 24px;
+    --margin-standard: 16px;
+    --default-font: Arial, Helvetica, sans-serif;
+    --default-line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--primary_color);
     padding: 10px;
 }
 
@@ -14,7 +27,7 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary_color);
 }
 
 main img {
@@ -37,7 +50,6 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
 }
 
 p {
@@ -45,8 +57,8 @@ p {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    font-family: var(--default-font);
+    line-height: var(--default-line-height);
 }
 
 footer {
