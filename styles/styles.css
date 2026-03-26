@@ -54,11 +54,11 @@ p {
 }
 
 aside {
-    position: relative;
     width: 28rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
