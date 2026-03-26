@@ -36,6 +36,7 @@ main {
 
 h1 {
     color: var(--primary_color);
+    padding: 0.5rem;
 }
 
 main img {
@@ -46,6 +47,10 @@ main img {
     box-shadow: 0 0 30px grey;
     float: right;
     margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 aside {
@@ -88,4 +93,8 @@ footer {
     padding: 1rem;
     background-color: #eee;
     color: #333;
+}
+
+.indent {
+    padding-left: 2rem;
 }
