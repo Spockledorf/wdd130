@@ -1,12 +1,16 @@
 :root {
-    --primary-color: #01182e;
+    --primary-color: rgb(1, 24, 46);
     /* Very dark navy */
-    --secondary-color: #015c8a;
+    --secondary-color: rgb(1, 92, 138);
     /* rich blue */
-    --accent1-color: #a3d5ff;
+    --secondary-color-60: rgb(1, 92, 138, 0.6);
+    /* rich blue, opacity 0.7 */
+    --accent1-color: #c4e4ff;
     /* light sky blue */
-    --accent2-color: #cbd5e1;
+    --accent2-color: #fff;
     /* cool gray */
+    --section-body-backgound-color: rgba(2, 46, 88, 0.664);
+    --border-default: 1px solid rgb(0, 0, 0, .1);
     --heading-font: ;
     --body-font: Arial, Helvetica, sans-serif;
     --font-size-default: 16px;
@@ -22,14 +26,14 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
 img {
     width: 100%;
     height: auto;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
 header,
@@ -53,11 +57,9 @@ article {
     padding: var(--padding-standard);
 }
 
-nav img {
-    width: 100px;
+.socialmedia a {
+    text-decoration: none;
 }
-
-div {}
 
 .hero {
     position: relative;
@@ -66,22 +68,70 @@ div {}
 .hero img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
-article img {
-    width: 100px;
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--secondary-color-60);
+    color: var(--accent2-color);
 }
 
-footer {}
+article {
+    position: absolute;
+    display: block;
+    border: var(--border-default);
+    width: 510px;
+    background-color: var(--secondary-color-60);
+    color: var(--accent2-color);
+    top: 64%;
 
-footer img {
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-top: 4px;
+    margin-left: var(--margin-standard);
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: var(--accent2-color);
+}
+
+section p {
+    background-color: var(--section-body-backgound-color);
+    border: var(--border-default);
+    color: var(--accent2-color);
+}
+
+footer {
+    border-top: 1px solid rgb(0, 0, 0, .8);
+    color: var(--primary-color);
+    font-size: small;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+nav img {
+    width: 125px;
+}
+
+.socialmedia {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.socialmedia img {
     width: 50px;
-}
-
-.motto {}
-
-.socialmedia {}
-
-.socialmedia a {
-    text-decoration: none;
+    margin-right: 7px;
 }
