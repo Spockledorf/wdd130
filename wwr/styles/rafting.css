@@ -102,6 +102,15 @@ section p {
 
 nav img {
     width: 125px;
+    border: var(--border-default);
+}
+
+nav {
+    font-size: small;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav,
