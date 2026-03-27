@@ -1,9 +1,18 @@
 :root {
-    --primary_color: darkblue;
+    --primary-color: #01182e;
+    /* Very dark navy */
+    --secondary-color: #015c8a;
+    /* rich blue */
+    --accent1-color: #a3d5ff;
+    /* light sky blue */
+    --accent2-color: #cbd5e1;
+    /* cool gray */
+    --heading-font: ;
+    --body-font: Arial, Helvetica, sans-serif;
     --font-size-default: 16px;
     --font-size-large: 24px;
     --margin-standard: 16px;
-    --default-font: Arial, Helvetica, sans-serif;
+    --padding-standard: 8px;
     --default-line-height: 1.5;
 }
 
@@ -13,12 +22,36 @@
     box-sizing: border-box;
 }
 
-img {
-    height: 100%;
-    width: auto;
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
-nav {}
+img {
+    width: 100%;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: var(--margin-standard);
+    padding: var(--padding-standard);
+}
 
 nav img {
     width: 100px;
@@ -26,14 +59,17 @@ nav img {
 
 div {}
 
-div img {
-    width: 500px;
+.hero {
+    position: relative;
 }
 
-article {}
+.hero img {
+    display: block;
+    width: 100%;
+}
 
 article img {
-    width: 200px;
+    width: 100px;
 }
 
 footer {}
@@ -42,8 +78,10 @@ footer img {
     width: 50px;
 }
 
-/* Class Selectors */
-
-.hero {}
+.motto {}
 
 .socialmedia {}
+
+.socialmedia a {
+    text-decoration: none;
+}
