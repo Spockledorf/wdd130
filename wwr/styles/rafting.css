@@ -100,13 +100,13 @@ section p {
     color: var(--accent1-color);
 }
 
+nav {
+    font-size: small;
+}
+
 nav img {
     width: 125px;
     border: var(--border-default);
-}
-
-nav {
-    font-size: small;
 }
 
 nav a {
