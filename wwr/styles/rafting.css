@@ -1,0 +1,49 @@
+:root {
+    --primary_color: darkblue;
+    --font-size-default: 16px;
+    --font-size-large: 24px;
+    --margin-standard: 16px;
+    --default-font: Arial, Helvetica, sans-serif;
+    --default-line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+nav {}
+
+nav img {
+    width: 100px;
+}
+
+div {}
+
+div img {
+    width: 500px;
+}
+
+article {}
+
+article img {
+    width: 200px;
+}
+
+footer {}
+
+footer img {
+    width: 50px;
+}
+
+/* Class Selectors */
+
+.hero {}
+
+.socialmedia {}
