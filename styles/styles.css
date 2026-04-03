@@ -48,6 +48,7 @@ main {
 h1 {
     color: var(--primary_color);
     padding: 0.5rem;
+    border-bottom: 1px solid #000;
 }
 
 main img {
@@ -57,7 +58,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px grey;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0.5rem 0 1rem 1rem;
 }
 
 p {
@@ -65,7 +66,7 @@ p {
 }
 
 aside {
-    width: 28rem;
+    width: 350px;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -80,8 +81,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 125px;
-    left: 90px;
+    align-self: center;
+    left: 40px;
     color: #eee;
 }
 
