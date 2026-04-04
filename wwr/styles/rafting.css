@@ -170,8 +170,9 @@ section figure {
     border: var(--border-default);
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
+    padding-left: var(--padding-standard);
+    padding-right: var(--padding-standard);
+    max-width: 200px;
     margin: auto;
 }
 
