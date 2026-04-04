@@ -34,6 +34,34 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+header img {
+    width: 125px;
+    justify-self: center;
+    padding: var(--padding-standard);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: var(--padding-standard);
+    font-size: large;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -100,13 +128,9 @@ section p {
     color: var(--accent1-color);
 }
 
-nav {
+/* nav {
     font-size: small;
-}
-
-nav img {
-    width: 125px;
-}
+} */
 
 nav a {
     text-decoration: none;
