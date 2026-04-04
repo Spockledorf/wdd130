@@ -66,6 +66,7 @@ header img {
     font-size: large;
     font-weight: bolder;
     color: var(--secondary-color);
+    justify-self: center;
 
 }
 
@@ -150,6 +151,18 @@ section {
     padding-right: 0;
 }
 
+section div {
+    background-color: var(--section-body-background-color);
+    border: var(--border-default);
+    margin: var(--margin-standard);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section div img {
+    max-width: 250px;
+}
+
 section figure {
     border: var(--border-default);
     display: flex;
@@ -171,14 +184,6 @@ figcaption {
 .figures {
     display: flex;
     gap: 10px;
-}
-
-section div {
-    background-color: var(--section-body-background-color);
-    border: var(--border-default);
-    margin: var(--margin-standard);
-    display: flex;
-    justify-content: space-evenly;
 }
 
 /* section div.figures {} */
