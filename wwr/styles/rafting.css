@@ -2,7 +2,7 @@
     --primary-color: rgb(1, 24, 46);
     --secondary-color: rgb(1, 92, 138);
     --secondary-color-60: rgba(1, 92, 138, 0.6);
-    --accent1-color: #fff;
+    --accent1-color: rgb(255, 255, 255);
     --section-body-background-color: rgba(2, 46, 88, 0.664);
     --border-default: 1px solid rgba(0, 0, 0, 0.1);
     --heading-font: 'Courier New', Courier, monospace;
@@ -32,6 +32,34 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+header img {
+    width: 125px;
+    justify-self: center;
+    padding: var(--padding-standard);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: var(--padding-standard);
+    font-size: large;
 }
 
 h1,
@@ -100,13 +128,9 @@ section p {
     color: var(--accent1-color);
 }
 
-nav {
+/* nav {
     font-size: small;
-}
-
-nav img {
-    width: 125px;
-}
+} */
 
 nav a {
     text-decoration: none;
