@@ -130,6 +130,7 @@ section p {
     /* background-color: var(--section-body-background-color); */
     /* border: var(--border-default); */
     color: var(--accent1-color);
+    align-self: center;
 }
 
 nav a {
@@ -160,7 +161,9 @@ section div {
 }
 
 section div img {
-    max-width: 250px;
+    max-width: 200px;
+    padding-top: var(--padding-standard);
+    padding-bottom: var(--padding-standard);
 }
 
 section figure {
