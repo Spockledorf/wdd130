@@ -167,13 +167,14 @@ section div img {
 }
 
 section figure {
-    border: var(--border-default);
     display: flex;
     flex-flow: column;
     padding-left: var(--padding-standard);
     padding-right: var(--padding-standard);
-    max-width: 200px;
-    margin: auto;
+}
+
+section figure img {
+    max-height: 150px;
 }
 
 figcaption {
