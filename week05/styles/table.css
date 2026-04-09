@@ -1,0 +1,65 @@
+:root {
+    --primary-color: rgb(1, 24, 46);
+    --secondary-color: rgb(1, 92, 138);
+    --secondary-color-60: rgba(1, 92, 138, 0.6);
+    --accent1-color: rgb(255, 255, 255);
+    --section-body-background-color: rgba(2, 46, 88, 0.664);
+    --border-default: 1px solid rgba(0, 0, 0, 1);
+    --heading-font: 'Courier New', Courier, monospace;
+    --body-font: Arial, Helvetica, sans-serif;
+    --margin-standard: 16px;
+    --padding-standard: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 50px 50px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: var(--border-default);
+    padding: 10px 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+th:hover,
+td:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+thead th,
+tfoot tr {
+    color: #eee;
+    background-color: black;
+}
+
+.alt_color_row {
+    background-color: rgb(199, 199, 202);
+}
+
+label {
+    display: block;
+    margin-bottom: 0rem;
+    display: flex;
+    align-content: center;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 90%;
+    padding: 0.75em;
+    margin-bottom: 1rem;
+}
