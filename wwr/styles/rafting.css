@@ -272,7 +272,9 @@ section.map-and-form {
 }
 
 iframe {
-    max-width: 350px;
+    width: 400px;
+    height: 400px;
+    border: var(--border-default);
 }
 
 .inquiry-form {
