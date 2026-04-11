@@ -1,3 +1,5 @@
+/* This is a backup on 4-11-26 so I don't lose everything if I mess up */
+
 :root {
     --primary-color: rgb(1, 24, 46);
     --secondary-color: rgb(1, 92, 138);
@@ -152,7 +154,7 @@ section {
     padding-right: 0;
 }
 
-section > div {
+section div {
     background-color: var(--section-body-background-color);
     border: var(--border-default);
     margin: var(--margin-standard);
@@ -171,7 +173,6 @@ section figure {
     flex-flow: column;
     padding-left: var(--padding-standard);
     padding-right: var(--padding-standard);
-    align-items: center;
 }
 
 section figure img {
@@ -182,19 +183,9 @@ figcaption {
     background-color: var(--section-body-background-color);
     color: var(--accent1-color);
     font: italic smaller sans-serif;
-    padding: 5px 10px;
+    padding: 5px;
     margin: 3px;
     text-align: center;
-}
-
-figcaption a {
-    text-decoration: none;
-    color: var(--accent1-color);
-}
-
-figcaption a:hover {
-    text-decoration: underline;
-    color: red;
 }
 
 .figures {
@@ -264,20 +255,22 @@ iframe {
 .inquiry-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
+    /* gap: 12px; */
     background-color: var(--section-body-background-color);
     padding: var(--padding-standard);
     border: var(--border-default);
     min-height: 400px;
-    min-width: 450px;
 }
 
 .form-group {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: none;
+    border: none;
 }
 
 .form-group-vert {
@@ -286,12 +279,14 @@ iframe {
 }
 
 .form-group label {
+    /* margin-bottom: 4px; */
     color: var(--accent1-color);
-    min-width: 65px;
+    justify-self: left;
+    /* This isn't working? */
 }
 
-.form-group label span {
-    font-style: italic;
+.form-group-text input {
+    min-width: 200px;
 }
 
 .form-group input,
@@ -299,7 +294,6 @@ iframe {
     padding: 6px;
     border: var(--border-default);
     border-radius: 4px;
-    flex: 1;
 }
 
 .form-group textarea {
@@ -307,22 +301,28 @@ iframe {
     resize: vertical;
 }
 
-.radio-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-}
-
-.radio-buttons label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent1-color);
+.form-group input[type="radio"] {
+    margin-right: 6px;
 }
 
 .form-group input[type="checkbox"] {
     margin-right: 6px;
+}
+
+.form-group label input[type="radio"] {
+    margin-right: 6px;
+    padding-right: 60px;
+}
+
+.form-group label span {
+    font-style: italic;
+    font-size: small;
+}
+
+div.form-group p {
+    margin: 0 0 0 0;
+    padding: 0;
+    /* max-width: 70px; */
 }
 
 button {
@@ -336,5 +336,21 @@ button {
 
 button:hover {
     background-color: var(--primary-color);
-    border: 1px solid var(--accent1-color);
+    border: 0.5px solid var(--accent1-color);
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent1-color);
+    min-width: 200px;
 }

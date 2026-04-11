@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Form</title>
+    <meta name="author" content="Michael Jarvis" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+    <main class="box">
+        <h1>✅ Basic HTML and CSS Quiz</h1>
+        <form class="box">
+            <div class="quiz-item">
+                <label for="q1">1. What HTML tag is used to create a hyperlink?</label>
+                <input type="text" id="q1" name="q1" placeholder="Your answer here...">
+            </div>
+            <div class="quiz-item">
+                <label for="q2">2. Explain the difference between class and id selectors in
+                    CSS.</label>
+                <textarea name="q2" id="q2" rows="4" placeholder="Your answer here..."></textarea>
+            </div>
+            <div class="quiz-item">
+                <label for="q3">3. Which CSS property controls the text size?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="line-weight">line-weight</option>
+                    <option value="font-size">font-size</option> <!-- Correct answer -->
+                    <option value="text-style">text-style</option>
+                    <option value="font-weight">font-weight</option>
+                </select>
+            </div>
+            <div class="quiz-item">
+                <label for="q4">4. What is the left padding, given this declaration?</label>
+                <code class="box">padding: 7px 9px 14px;</code>
+                <input type="number" id="q4" name="q4" placeholder="Your answer here...">
+                <!-- Correct answer: 9 -->
+            </div>
+            <div>
+                <button type="submit">Submit Quiz</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
